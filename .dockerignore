@@ -1,0 +1,44 @@
+# Git
+.git
+.gitignore
+.github
+
+# IDE
+.vscode
+.idea
+*.iml
+*.iws
+*.ipr
+
+# Build
+target/
+out/
+*.class
+
+# Maven
+.m2
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node (if using any frontend build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation
+README.md
+*.md
+
+# Source code (we only need the JAR)
+src/
+pom.xml
