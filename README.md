@@ -209,9 +209,20 @@ spring.h2.console.path=/h2-console
 - Lombok dependency has been removed to avoid Java 25 compatibility issues
 - Manual getters/setters are used in the User model
 
-## � Docker & Container Deployment
+## 📚 Documentation
 
-The application is fully containerized with Docker. See [DOCKER.md](DOCKER.md) for:
+Comprehensive guides and setup instructions are in the [docs/](docs/) folder:
+
+- **[docs/INDEX.md](docs/INDEX.md)** - Complete documentation index
+- **[docs/QUICKSTART-AWS.md](docs/QUICKSTART-AWS.md)** - 5-minute AWS setup
+- **[docs/DEPLOYMENT-GUIDE.md](docs/DEPLOYMENT-GUIDE.md)** - Visual deployment guide
+- **[docs/AWS-CI-CD-SETUP.md](docs/AWS-CI-CD-SETUP.md)** - Complete CI/CD reference
+- **[docs/CI-CD-SUMMARY.md](docs/CI-CD-SUMMARY.md)** - Implementation summary
+- **[docs/DOCKER.md](docs/DOCKER.md)** - Docker containerization guide
+
+## 🐳 Docker & Container Deployment
+
+The application is fully containerized with Docker. See [docs/DOCKER.md](docs/DOCKER.md) for:
 - Building Docker images
 - Running with Docker Compose
 - Container deployment guides
@@ -219,7 +230,7 @@ The application is fully containerized with Docker. See [DOCKER.md](DOCKER.md) f
 
 ## 🚀 CI/CD Pipeline - AWS ECS/Fargate
 
-Automated deployment via GitHub Actions with AWS ECS/Fargate. See [aws/CI-CD-SETUP.md](aws/CI-CD-SETUP.md) for:
+Automated deployment via GitHub Actions with AWS ECS/Fargate. See [docs/QUICKSTART-AWS.md](docs/QUICKSTART-AWS.md) or [docs/AWS-CI-CD-SETUP.md](docs/AWS-CI-CD-SETUP.md) for:
 
 ### **Workflow Overview**
 ```
@@ -240,7 +251,7 @@ Push to GitHub → GitHub Actions → Build & Test → Push to ECR → Deploy to
 - ✅ IAM Roles & Policies
 - ✅ Security Groups
 
-See **[aws/CI-CD-SETUP.md](aws/CI-CD-SETUP.md)** for complete deployment guide.
+See **[docs/QUICKSTART-AWS.md](docs/QUICKSTART-AWS.md)** for complete deployment guide.
 
 ## 🚀 Future Enhancements
 

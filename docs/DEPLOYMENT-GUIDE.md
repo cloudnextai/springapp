@@ -415,7 +415,7 @@ Your Spring Boot application now has enterprise-grade CI/CD:
 
 **Start here:** [QUICKSTART-AWS.md](QUICKSTART-AWS.md)
 
-**Detailed guide:** [aws/CI-CD-SETUP.md](aws/CI-CD-SETUP.md)
+**Detailed guide:** [AWS-CI-CD-SETUP.md](AWS-CI-CD-SETUP.md)
 
 **Questions?** Check [CI-CD-SUMMARY.md](CI-CD-SUMMARY.md)
 

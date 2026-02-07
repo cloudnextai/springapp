@@ -17,9 +17,9 @@ Your Spring Boot application now has a fully automated CI/CD pipeline for AWS EC
 ### **Detailed Guides** 📚
 | Document | Purpose | Read Time |
 |----------|---------|-----------|
-| [aws/CI-CD-SETUP.md](aws/CI-CD-SETUP.md) | Complete setup reference | ⏱️ 20 min |
+| [AWS-CI-CD-SETUP.md](AWS-CI-CD-SETUP.md) | Complete setup reference | ⏱️ 20 min |
 | [CI-CD-SUMMARY.md](CI-CD-SUMMARY.md) | Implementation details | ⏱️ 15 min |
-| [README.md](README.md) | Application overview (updated) | ⏱️ 10 min |
+| [../README.md](../README.md) | Application overview (updated) | ⏱️ 10 min |
 | [DOCKER.md](DOCKER.md) | Docker containerization | ⏱️ 15 min |
 
 ---
@@ -210,11 +210,11 @@ https://github.com/cloudnextai/springapp/actions
 - 📋 [Setup checklist: DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)
 
 **For Reference:**
-- 📖 [Complete guide: aws/CI-CD-SETUP.md](aws/CI-CD-SETUP.md)
+- 📖 [Complete guide: AWS-CI-CD-SETUP.md](AWS-CI-CD-SETUP.md)
 - 📝 [Summary: CI-CD-SUMMARY.md](CI-CD-SUMMARY.md)
 
 **For Application:**
-- 💻 [App overview: README.md](README.md)
+- 💻 [App overview: ../README.md](../README.md)
 - 🐳 [Docker guide: DOCKER.md](DOCKER.md)
 
 ---

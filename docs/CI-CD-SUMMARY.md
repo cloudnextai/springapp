@@ -113,21 +113,25 @@ Your Spring Boot application now has a fully automated CI/CD pipeline for AWS EC
 
 ---
 
-## 🎯 Files Created/Modified
+## 📚 Files Created/Modified
 
 ```
 springapp/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml                     ✨ NEW - GitHub Actions workflow
+├── docs/
+│   ├── INDEX.md                          ✨ NEW - Documentation index
+│   ├── AWS-CI-CD-SETUP.md                ✨ NEW - Complete setup guide
+│   ├── CI-CD-SUMMARY.md                  ✨ NEW - Implementation details
+│   ├── DEPLOYMENT-GUIDE.md               ✨ NEW - Visual overview
+│   ├── QUICKSTART-AWS.md                 ✨ NEW - Quick start guide
+│   └── DOCKER.md                         ✨ NEW - Container guide
 ├── aws/
 │   ├── setup-ecs-fargate.sh              ✨ NEW - Infrastructure setup
-│   ├── ecs-task-definition.json          ✨ NEW - ECS configuration
-│   └── CI-CD-SETUP.md                    ✨ NEW - Detailed guide
+│   └── ecs-task-definition.json          ✨ NEW - ECS configuration
 ├── .env.example                          ✨ NEW - Environment template
-├── QUICKSTART-AWS.md                     ✨ NEW - Quick start guide
 ├── README.md                             📝 UPDATED - Added deployment info
-├── DOCKER.md                             ✓ Existing
 ├── Dockerfile                            ✓ Existing
 ├── docker-compose.yml                    ✓ Existing
 └── pom.xml                               ✓ Existing (layered JAR ready)
