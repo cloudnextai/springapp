@@ -209,15 +209,49 @@ spring.h2.console.path=/h2-console
 - Lombok dependency has been removed to avoid Java 25 compatibility issues
 - Manual getters/setters are used in the User model
 
+## � Docker & Container Deployment
+
+The application is fully containerized with Docker. See [DOCKER.md](DOCKER.md) for:
+- Building Docker images
+- Running with Docker Compose
+- Container deployment guides
+- Security best practices
+
+## 🚀 CI/CD Pipeline - AWS ECS/Fargate
+
+Automated deployment via GitHub Actions with AWS ECS/Fargate. See [aws/CI-CD-SETUP.md](aws/CI-CD-SETUP.md) for:
+
+### **Workflow Overview**
+```
+Push to GitHub → GitHub Actions → Build & Test → Push to ECR → Deploy to ECS/Fargate
+```
+
+### **Setup Steps**
+1. Configure AWS credentials in GitHub Secrets
+2. Run `aws/setup-ecs-fargate.sh` to create infrastructure
+3. Push to `main` branch to trigger deployment
+4. Monitor deployment in GitHub Actions and AWS Console
+
+### **Deployed Resources**
+- ✅ AWS ECR (Elastic Container Registry)
+- ✅ AWS ECS Cluster (Elastic Container Service)
+- ✅ AWS Fargate (Serverless container compute)
+- ✅ CloudWatch Logs
+- ✅ IAM Roles & Policies
+- ✅ Security Groups
+
+See **[aws/CI-CD-SETUP.md](aws/CI-CD-SETUP.md)** for complete deployment guide.
+
 ## 🚀 Future Enhancements
 
+- [x] ✅ Add REST API endpoints with RESTful design
+- [x] ✅ Docker containerization with multi-stage build
+- [x] ✅ Setup CI/CD pipeline (GitHub Actions)
+- [x] ✅ Deploy to AWS ECS/Fargate with automated pipeline
 - [ ] Add email field to User model
 - [ ] Implement phone number with validation
 - [ ] Add user search/filter functionality
 - [ ] Implement pagination for large datasets
-- [x] ✅ Add REST API endpoints with RESTful design
-- [x] ✅ Docker containerization with multi-stage build
-- [ ] Setup CI/CD pipeline (GitHub Actions)
 - [ ] Create separate REST API controller (JSON responses)
 - [ ] Add data validation with @Valid annotations
 - [ ] Implement error handling and custom error pages
