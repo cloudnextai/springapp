@@ -79,6 +79,24 @@ springapp/
    - Open your browser and navigate to: **http://localhost:8080/users**
    - The application will load with an empty user list
 
+### Docker & Container Deployment
+
+For containerization and cloud deployment, see [DOCKER.md](DOCKER.md) for detailed instructions on:
+- Building Docker images
+- Running with Docker Compose
+- Deploying to cloud platforms (AWS, Azure, GCP, Kubernetes)
+
+**Quick Start with Docker:**
+```bash
+# Build image
+docker build -t user-crud-app:latest .
+
+# Run with Docker Compose
+docker-compose up -d
+
+# Access at http://localhost:8080/users
+```
+
 ## 📱 Usage
 
 ### Adding a User
@@ -198,6 +216,8 @@ spring.h2.console.path=/h2-console
 - [ ] Add user search/filter functionality
 - [ ] Implement pagination for large datasets
 - [x] ✅ Add REST API endpoints with RESTful design
+- [x] ✅ Docker containerization with multi-stage build
+- [ ] Setup CI/CD pipeline (GitHub Actions)
 - [ ] Create separate REST API controller (JSON responses)
 - [ ] Add data validation with @Valid annotations
 - [ ] Implement error handling and custom error pages
