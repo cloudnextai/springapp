@@ -76,7 +76,7 @@ springapp/
    ```
 
 4. **Access the application**
-   - Open your browser and navigate to: **http://localhost:8080**
+   - Open your browser and navigate to: **http://localhost:8080/users**
    - The application will load with an empty user list
 
 ## 📱 Usage
@@ -103,11 +103,11 @@ springapp/
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/` | Display all users and add user form |
-| POST | `/addUser` | Add a new user |
-| GET | `/edit/{id}` | Load user edit form |
-| POST | `/updateUser` | Update user details |
-| GET | `/delete/{id}` | Delete a user |
+| GET | `/users` | Display all users and add user form |
+| POST | `/users` | Add a new user |
+| GET | `/users/{id}/edit` | Load user edit form |
+| POST | `/users/{id}` | Update user details |
+| GET | `/users/{id}/delete` | Delete a user |
 
 ## 🗄️ Database
 
@@ -197,7 +197,8 @@ spring.h2.console.path=/h2-console
 - [ ] Implement phone number with validation
 - [ ] Add user search/filter functionality
 - [ ] Implement pagination for large datasets
-- [ ] Add REST API endpoints (in addition to web UI)
+- [x] ✅ Add REST API endpoints with RESTful design
+- [ ] Create separate REST API controller (JSON responses)
 - [ ] Add data validation with @Valid annotations
 - [ ] Implement error handling and custom error pages
 - [ ] Add unit and integration tests
